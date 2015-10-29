@@ -1,0 +1,21 @@
+/*-----------------------------------------------------
+Author:  --<>
+Date: 2015-10-04
+Description:
+
+-----------------------------------------------------*/
+void blink13()
+{
+	toggle(13); // set pin 13 high if it's low and vice-versa
+}
+ 
+void setup()
+{
+       pinMode(13, OUTPUT);
+       OnTimer0(blink13, INT_MILLISEC, 500); // Use Timer0 to toggle pin 13 every 500 ms
+}
+ 
+void loop()
+{
+
+}
