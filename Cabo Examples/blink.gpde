@@ -1,0 +1,99 @@
+[Block-1]
+self_id = 0x062
+from = []
+name = function
+constructor = [['label', 'loop'], ['syntax', '()']]
+position = (305, 344)
+basename = loop
+inside = []
+to = []
+nested = ['0x06451']
+
+[Block-2]
+self_id = 0x03
+from = []
+name = function
+constructor = [['label', 'setup'], ['syntax', '()']]
+position = (311, 250)
+basename = setup
+inside = []
+to = []
+nested = ['0x06476300']
+
+[Block-3]
+self_id = 0x06476300
+from = ['0x03']
+name = linear
+constructor = [['label', 'pinMode'], ['syntax', '('], ['space'], ['syntax', ', '], ['space'], ['syntax', ')']]
+position = (323, 289)
+basename = pinMode
+inside = ['0x064768', '0x06479058']
+to = []
+nested = []
+
+[Block-4]
+self_id = 0x064768
+from = ['0x06476300']
+name = output
+constructor = [['spin_int', 'USERLED', -100, 100]]
+position = (0, 0)
+basename = spin-int
+inside = []
+to = []
+nested = []
+
+[Block-5]
+self_id = 0x06479058
+from = ['0x06476300']
+name = output
+constructor = [['spin_choice', 'OUTPUT', ['INPUT', 'OUTPUT']]]
+position = (0, 0)
+basename = choice-io
+inside = []
+to = []
+nested = []
+
+[Block-6]
+self_id = 0x06451
+from = ['0x062']
+name = linear
+constructor = [['label', 'toggle'], ['syntax', '('], ['space'], ['syntax', ')']]
+position = (317, 383)
+basename = toggle
+inside = ['0x06456580']
+to = ['0x088783']
+nested = []
+
+[Block-7]
+self_id = 0x06456580
+from = ['0x06451']
+name = output
+constructor = [['spin_int', 'USERLED', -100, 100]]
+position = (414, 385)
+basename = spin-int
+inside = []
+to = []
+nested = []
+
+[Block-8]
+self_id = 0x088783
+from = ['0x06451']
+name = linear
+constructor = [['label', 'delay'], ['syntax', '('], ['space'], ['syntax', ')']]
+position = (317, 422)
+basename = delay
+inside = ['0x08878878']
+to = []
+nested = []
+
+[Block-9]
+self_id = 0x08878878
+from = ['0x088783']
+name = output
+constructor = [['spin_int', '100', -100, 100]]
+position = (0, 0)
+basename = spin-int
+inside = []
+to = []
+nested = []
+
